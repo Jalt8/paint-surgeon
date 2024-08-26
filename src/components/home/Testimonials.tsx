@@ -31,21 +31,21 @@ const testimonials = [
     name: "Murray Williams",
     date: "2022-09-01",
     rating: 5,
-    content: "Very pleased with Paint Surgeon's work on my home. The team was professional and careful with our antique furniture. The fresh paint has really improved the look of our Victorian-style house. Appreciate their attention to detail.",
+    content: "Very pleased with Paint Surgeon&aposs work on my home. The team was professional and careful with our antique furniture. The fresh paint has really improved the look of our Victorian-style house. Appreciate their attention to detail.",
     source: "Google"
   },
   {
     name: "Jacques van der Merwe",
     date: "2024-02-27",
     rating: 5,
-    content: "Paint Surgeon did an excellent job refreshing the exterior of our house. The owner was attentive to our needs, especially in matching the paint to our farm's aesthetic. They used quality materials and the finish looks great.",
+    content: "Paint Surgeon did an excellent job refreshing the exterior of our house. The owner was attentive to our needs, especially in matching the paint to our farm&aposs aesthetic. They used quality materials and the finish looks great.",
     source: "Google"
   },
   {
     name: "Byron Williams",
     date: "2023-05-17",
     rating: 5,
-    content: "As a guesthouse owner, I needed a reliable painting service. Paint Surgeon delivered great results. They were on time, efficient, and left the property looking fresh. It's made a real difference to our guesthouse's appearance, and our guests have noticed!",
+    content: "As a guesthouse owner, I needed a reliable painting service. Paint Surgeon delivered great results. They were on time, efficient, and left the property looking fresh. It&aposs made a real difference to our guesthouse&aposs appearance, and our guests have noticed!",
     source: "Google"
   }
 ];
