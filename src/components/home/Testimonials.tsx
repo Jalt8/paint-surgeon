@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -99,7 +100,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
       <p className="text-gray-700 mb-4 line-clamp-4">{testimonial.content}</p>
       <div className="flex items-center text-sm text-gray-500">
         <span className="mr-2">Source:</span>
-        <img src={`/google.png`} alt={testimonial.source} className="h-8" />
+        <Image width={30} height={15} src={`/google.png`} alt={testimonial.source} className="h-8" />
       </div>
     </motion.div>
   );

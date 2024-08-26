@@ -66,8 +66,8 @@ const CustomSlider: React.FC = () => {
           <Image
             src={slide.image}
             alt={slide.title}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             priority={index === 0}
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center">

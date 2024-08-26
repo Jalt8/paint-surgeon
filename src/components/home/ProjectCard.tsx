@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Modal from './Modal';
+import Image from 'next/image';
 
 const ProjectCard = ({ title, description, images }: { title: string, description: string, images: string[] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,7 +25,9 @@ const ProjectCard = ({ title, description, images }: { title: string, descriptio
     <>
       <div className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105">
         <div className="relative">
-          <img 
+          <Image
+            width={400}
+            height={224}
             src={images[currentImageIndex]} 
             alt={`${title} - Image ${currentImageIndex + 1}`} 
             className="w-full h-56 object-cover cursor-pointer"

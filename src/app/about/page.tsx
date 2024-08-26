@@ -42,7 +42,7 @@ const About = () => {
               Established in 2021 in Gauteng, South Africa, Paint Surgeon was born out of a desire to deliver exceptional painting services. Our journey began with a small yet dedicated team, and today, we are proud to be recognized for our meticulous attention to detail and unwavering commitment to customer satisfaction.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              What started as a small venture has grown into a trusted name in the industry. Our team's expertise and passion are evident in every project we undertake, from cozy homes to expansive commercial properties. We believe in the transformative power of paint and strive to bring your vision to life with every brushstroke.
+              What started as a small venture has grown into a trusted name in the industry. Our team&apos;s expertise and passion are evident in every project we undertake, from cozy homes to expansive commercial properties. We believe in the transformative power of paint and strive to bring your vision to life with every brushstroke.
             </p>
           </motion.div>
           
@@ -69,7 +69,7 @@ const About = () => {
               Our team is our greatest asset. Each member brings unique skills and a dedication to excellence. We work together to deliver outstanding results and create beautiful, lasting finishes that our clients love.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              We invite you to get to know us better and see why so many have trusted Paint Surgeon with their painting needs. Whether you're looking to refresh your home's interior or enhance your property's curb appeal, we're here to help you every step of the way.
+              We invite you to get to know us better and see why so many have trusted Paint Surgeon with their painting needs. Whether you&aposre looking to refresh your home&aposs interior or enhance your property&aposs curb appeal, we&aposre here to help you every step of the way.
             </p>
           </motion.div>
         </div>
