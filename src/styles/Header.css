@@ -1,0 +1,107 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: #ed1c24;
+    transition: all 0.3s;
+  }
+  
+  .header.scrolled {
+    height: 80px;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+    space-x: 1rem;
+  }
+  
+  .header .logo img {
+    height: 3rem;
+    width: auto;
+  }
+  
+  .header .nav {
+    display: none;
+  }
+  
+  .header .nav.desktop {
+    display: flex;
+    align-items: center;
+    space-x: 1.5rem;
+  }
+  
+  .header .nav.desktop a {
+    color: white;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+  }
+  
+  .header .nav.desktop a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header .nav.desktop a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .header .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .header .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #ed1c24;
+  }
+  
+  .header .mobile-nav a {
+    color: white;
+    padding: 1rem;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .header .mobile-nav a:hover {
+    background-color: #ff0008;
+  }
+  
+  .header .mobile-nav a:last-child {
+    background-color: #2563eb;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .header .nav {
+      display: flex;
+    }
+  
+    .header .mobile-menu-button {
+      display: none;
+    }
+  }
+  
