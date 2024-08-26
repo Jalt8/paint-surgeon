@@ -131,7 +131,7 @@ const Testimonials = () => {
     <section className="bg-gradient-to-b from-gray-100 to-white py-16">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">What Our Clients Say</h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Don't just take our word for it. Here's what our satisfied customers have to say about our painting services.</p>
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Don&apost just take our word for it. Here&aposs what our satisfied customers have to say about our painting services.</p>
         <div className="relative max-w-6xl mx-auto">
           <AnimatePresence mode="wait">
             <div className="flex justify-between gap-6">
