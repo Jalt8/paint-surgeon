@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from 'lucide-react';
+import { CldImage } from 'next-cloudinary';
 
 const Modal = ({ isOpen, onClose, images, currentIndex, onPrev, onNext }: { isOpen: boolean, onClose: () => void, images: string[], currentIndex: number, onPrev: () => void, onNext: () => void }) => {
   const [isZoomed, setIsZoomed] = useState(false);
@@ -67,14 +68,16 @@ const Modal = ({ isOpen, onClose, images, currentIndex, onPrev, onNext }: { isOp
               <ChevronRight size={48} />
             </button>
 
-            <motion.img 
-              src={images[currentIndex]}
+            <CldImage 
+              src={`PaintSurgeon/${images[currentIndex]}`}
               alt={`Image ${currentIndex + 1}`}
               className={`max-w-[90%] max-h-[90%] object-contain ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
               onClick={() => setIsZoomed(!isZoomed)}
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
+              width={1200}
+              height={800}
               style={{
                 transform: isZoomed ? 'scale(1.5)' : 'scale(1)',
                 transition: 'transform 0.3s ease-in-out'

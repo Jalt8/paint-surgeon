@@ -1,27 +1,27 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { CldImage } from 'next-cloudinary';
 
 const slides = [
   {
-    image: "/1.jpg",
+    image: "PaintSurgeon/1_rpvzhk",
     title: "Exterior Painting",
     description: "Professional exterior painting to enhance curb appeal and protect your property.",
     link1: { href: "/services/exterior", text: "Learn More" },
     link2: { href: "/contact", text: "Contact Us" }
   },
   {
-    image: "/2.jpg",
+    image: "PaintSurgeon/2_hfucd6",
     title: "Interior Painting",
     description: "High-quality interior painting services for homes and businesses.",
     link1: { href: "/services/interior", text: "Learn More" },
     link2: { href: "/contact", text: "Contact Us" }
   },
   {
-    image: "/3.jpg",
+    image: "PaintSurgeon/3_sbgwuq",
     title: "Commercial Painting",
     description: "Reliable and efficient painting services for commercial properties.",
     link1: { href: "/services/commercial", text: "Learn More" },
@@ -63,10 +63,11 @@ const CustomSlider: React.FC = () => {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <Image
+          <CldImage
             src={slide.image}
             alt={slide.title}
             fill
+            sizes="100vw"
             style={{ objectFit: 'cover' }}
             priority={index === 0}
           />
