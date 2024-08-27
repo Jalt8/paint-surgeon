@@ -100,7 +100,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
       <p className="text-sm sm:text-base text-gray-700 mb-4 flex-grow line-clamp-4">{testimonial.content}</p>
       <div className="flex items-center text-xs sm:text-sm text-gray-500 mt-auto">
         <span className="mr-2">Source:</span>
-        <CldImage width={30} height={15} src="paint-surgeon/google" alt={testimonial.source} className="h-6 sm:h-8" />
+        <CldImage width={30} height={15} src="PaintSurgeon/google_ha0chz" alt={testimonial.source} className="h-6 sm:h-8" />
       </div>
     </motion.div>
   );
