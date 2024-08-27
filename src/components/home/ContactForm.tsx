@@ -14,10 +14,9 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('Sending...');
-    console.log('Form submitted:', formData);
 
     try {
-      const response = await fetch('http://localhost:3001/api/send-email', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -26,17 +25,13 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        const result = await response.json();
-        console.log('Server response:', result);
         setStatus('Email sent successfully!');
         setFormData({ name: '', email: '', message: '' });
       } else {
-        const errorResult = await response.json();
-        console.error('Server error:', errorResult);
         setStatus('Failed to send email. Please try again.');
       }
     } catch (error) {
-      console.error('Network error:', error);
+      console.error('Error:', error);
       setStatus('An error occurred. Please try again later.');
     }
   };
