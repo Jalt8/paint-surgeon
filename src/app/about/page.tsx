@@ -69,7 +69,7 @@ const About = () => {
               Our team is our greatest asset. Each member brings unique skills and a dedication to excellence. We work together to deliver outstanding results and create beautiful, lasting finishes that our clients love.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              We invite you to get to know us better and see why so many have trusted Paint Surgeon with their painting needs. Whether you&aposre looking to refresh your home&aposs interior or enhance your property&aposs curb appeal, we&aposre here to help you every step of the way.
+              We invite you to get to know us better and see why so many have trusted Paint Surgeon with their painting needs. Whether you&apos;re looking to refresh your home&apos;s interior or enhance your property&apos;s curb appeal, we&apos;re here to help you every step of the way.
             </p>
           </motion.div>
         </div>

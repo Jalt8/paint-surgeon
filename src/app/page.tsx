@@ -7,24 +7,24 @@ import CTA from "../components/home/CTA";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <CustomSlider />
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 sm:py-24">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in-up">
             Welcome to Paint Surgeon
           </h1>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
+          <p className="text-base sm:text-xl max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
             Transforming spaces with precision and expertise. We provide high-quality painting services for residential and commercial properties.
           </p>
         </div>
       </section>
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-gray-50 py-12 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800">
             Our Expert Services
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 title: "Interior Painting",
